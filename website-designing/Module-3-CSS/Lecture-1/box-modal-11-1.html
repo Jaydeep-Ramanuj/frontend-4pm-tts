@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: whitesmoke;
+        border-radius: 12px;
+
+        /* padding: 10px; */
+        /* margin: 20px; */
+
+        /* all sides */
+        /* padding: 10px; */
+
+        /* top-bottom left-right */
+        /* padding: 10px 20px; */
+
+        /* top left-right bottom */
+        /* padding: 10px 20px 30px; */
+
+        /* top right bottom left */
+        /* padding: 10px 20px 30px 40px; */
+
+        padding-top: 10px;
+        padding-bottom: 5px;
+
+        /* all sides */
+        /* margin: 10px; */
+
+        /* top-bottom left-right */
+        /* margin: 10px 20px; */
+
+        /* top left-right bottom */
+        /* margin: 10px 20px 30px; */
+
+        /* top right bottom left */
+        /* margin: 10px 20px 30px 40px; */
+
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      .parent {
+        height: 500px;
+        width: 500px;
+        background-color: tomato;
+        border-radius: 12px;
+      }
+
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: teal;
+        border-radius: 12px;
+        padding: 10px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

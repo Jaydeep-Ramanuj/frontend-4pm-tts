@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="css-intro.css" />
+
+    <style>
+      /* selector {
+        property_name_1: property_value_1;
+        property_name_2: property_value_2;
+      } */
+
+      /* p {
+        color: 13;
+      } */
+
+      /* internal CSS */
+
+      div {
+        color: yellow !important;
+      }
+
+      #special {
+        color: tomato;
+      }
+
+      .some {
+        color: violet;
+      }
+
+      .some {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline CSS -->
+    <p style="color: red; background-color: beige">This is p tag</p>
+
+    <div style="color: red">This is div tag</div>
+    <div style="color: red">This is second div tag</div>
+    <div style="color: red">This is third div tag</div>
+
+    <div>This is normal div tag</div>
+    <div class="some">This is div tag with some class</div>
+    <div class="some" id="special" style="color: black">
+      This is div tag with some class and special id
+    </div>
+  </body>
+</html>
