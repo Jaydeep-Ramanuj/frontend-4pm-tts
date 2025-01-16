@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* tag name / type selector, it is used to give style to any specific tag / type element */
+
+      p {
+        color: red;
+      }
+
+      p {
+        color: green;
+        background-color: grey;
+      }
+
+      /* group selector (selector,selector, selector), to give common style to particular group of elements */
+      p,
+      u {
+        color: tomato;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      /* Universal selector, it is used to give common to style to each and every elements in document (if used alone) */
+      * {
+        border: 1px solid black;
+      }
+
+      /* class selector, it is used to give common style to multiple elements,
+      - we can use one class in multiple elements
+      - as well as an element can have multiple classes */
+      .some {
+        color: purple;
+      }
+
+      .thing {
+        font-size: 48px;
+      }
+
+      /* id selector, it used to uniquely identify an element: .;
+      - one element can have only one id and 
+      - one id can be used in only one element
+      */
+
+      #unique {
+        color: yellowgreen;
+      }
+
+      /* combinator */
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <p>This is second p tag</p>
+
+    <i class="thing">This is i tag</i>
+
+    <b class="some">This is b tga</b>
+
+    <u>This is u tag </u>
+
+    <div class="some thing">This is div tag</div>
+
+    <!-- <some>This is some element</some> -->
+
+    <div id="unique">This is div tag with 'unique' id</div>
+  </body>
+</html>
+
+<!-- * Universal
+tag
+(,) group
+(.) class
+(#) id -->

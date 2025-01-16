@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* div#special {
+        color: yellowgreen;
+      } */
+
+      /* div.some {
+        color: red;
+      } */
+
+      /* div.some#special {
+        color: violet;
+      } */
+
+      /* div#special.some.thing.thing {
+        color: turquoise;
+      } */
+
+      /* div.some.thing#special {
+        color: yellowgreen;
+      } */
+
+      .some.some.some {
+        color: red;
+      }
+
+      .thing.thing {
+        color: yellowgreen;
+      }
+
+      .child {
+        padding: 10px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      /* descendant selector, it is used to select from all descendents (પેઢી  / વારસો) (from any level) */
+      .parent .child {
+        border: 1px solid red;
+      }
+
+      /* .parent * {
+        color: red;
+      } */
+
+      /* child selector, it is used to select elements from immediate child (from first level only) */
+      .parent > .child {
+        border: 2px solid purple;
+      }
+      .parent i {
+        border: 2px solid purple;
+      }
+      /* 
+      .card > img {
+      } */
+    </style>
+  </head>
+  <body>
+    <p class="some">This is p tag with some class</p>
+    <div class="some thing" id="special">This is div tag with 'some' class</div>
+    <div>This is div tag</div>
+
+    <hr />
+    <div class="parent">
+      <div class="child">
+        Child
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+        <div class="child">Child</div>
+      </div>
+      <div class="child">
+        Child
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+      </div>
+      <div class="child">
+        Child
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+        <div class="sub-child">Sub-Child</div>
+      </div>
+    </div>
+    <i>This is i tag</i>
+
+    <img src="" alt="" />
+    <div class="card">
+      <img src="" alt="" />
+      <div class="content">
+        <p></p>
+        <div class="profile">
+          <img src="" alt="" />
+          <div class="wrapper">
+            <h4></h4>
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
