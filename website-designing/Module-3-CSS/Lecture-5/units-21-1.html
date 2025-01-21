@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Units, it is useful to some specific number to any property  */
+
+      /* absolute unit, it depends on no one, example px, not suitable to responsive layout */
+
+      /* relative units, it depends on some other property / element, it is recommended for responsive layout */
+
+      /* example %, vh, vw, em, rem */
+
+      .box {
+        height: 300px;
+        /* width: 400px; */
+        min-width: 300px;
+        max-width: 600px;
+        margin: 30px;
+        background-color: red;
+      }
+
+      .inner-box {
+        width: 50%;
+        /* width: 300px; */
+        height: 100px;
+        background-color: yellowgreen;
+      }
+
+      .parent {
+        height: 500px;
+        width: 500px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+        padding: 10px;
+
+        font-size: 3em;
+      }
+
+      .child {
+        height: 300px;
+        /* width: fit-content; */
+        width: 300px;
+        background-color: teal;
+        border-radius: 12px;
+        padding: 10px;
+
+        font-size: 1em;
+        font-size: 1.5em;
+      }
+
+      .sub-child {
+        height: 100px;
+        /* width: fit-content; */
+        width: 30vw;
+        background-color: yellow;
+        border-radius: 12px;
+
+        font-size: 16px;
+        font-size: 2rem;
+      }
+
+      button {
+        padding: 0.5rem 1.5rem;
+        background-color: red;
+      }
+
+      .card {
+        height: 50vh;
+        width: 70vw;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box"></div>
+    </div>
+
+    <div class="parent">
+      Parent
+      <div class="child">
+        Child
+        <div class="sub-child">sub-child</div>
+      </div>
+    </div>
+
+    <button>Click here to go to</button>
+
+    <div class="card"></div>
+  </body>
+</html>
