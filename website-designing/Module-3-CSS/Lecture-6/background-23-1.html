@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        height: 500px;
+        width: 500px;
+        border-radius: 12px;
+        margin: 50px auto;
+        /* background-color: tomato; */
+
+        border: 2px solid black;
+
+        /* background-image: url(https://i.giphy.com/f2HiQKaEkaKwo.webp),
+          url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+
+        /* background-image: url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+
+        background-image: linear-gradient(blue, pink);
+        background-image: linear-gradient(to top, blue, pink);
+        background-image: linear-gradient(to right, blue, pink);
+        background-image: linear-gradient(45deg, blue, pink);
+        background-image: linear-gradient(45deg, blue, pink, red);
+        background-image: linear-gradient(45deg, blue, pink, red, black);
+        background-image: linear-gradient(
+          45deg,
+          blue 30%,
+          pink 90%,
+          red,
+          black
+        );
+
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.226),
+            rgba(0, 0, 0, 0.226)
+          ),
+          url(https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+        background-image: radial-gradient(red, pink);
+        background-image: radial-gradient(red, pink, blue);
+        background-image: radial-gradient(red 30%, pink, blue);
+
+        background-image: conic-gradient(red, blue);
+        background: conic-gradient(
+          from 0.25turn at 50% 30%,
+          #f69d3c,
+          10deg,
+          #3f87a6,
+          350deg,
+          #ebf8e1
+        );
+
+        background-repeat: repeat;
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        /* background-repeat: space; */
+        /* background-repeat: round; */
+
+        background-position: center;
+        /* background-position: top; */
+        /* background-position: top left; */
+        /* background-position: top right; */
+        /* background-position: bottom right; */
+        /* background-position: 30px 100px; */
+        /* background-position: 10% 30%; */
+
+        background-size: contain;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        font-size: 100px;
+        font-weight: 600;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">BOX</div>
+  </body>
+</html>
