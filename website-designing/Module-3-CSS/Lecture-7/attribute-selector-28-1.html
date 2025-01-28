@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input[type] {
+        background-color: red;
+      } */
+      /* input[type='email'] {
+        background-color: black;
+      } */
+
+      p {
+        padding: 5px;
+        border-radius: 8px;
+        background-color: tomato;
+        color: white;
+        font-size: 18px;
+      }
+      /* if exist */
+      /* p[data-attr] {
+        background-color: teal;
+      } */
+
+      /* if has exact value */
+      /* p[data-attr='some'] {
+        background-color: teal;
+      } */
+
+      /* if it has hyphen separated value  */
+      /* p[data-attr|='some'] {
+        background-color: teal;
+      } */
+
+      /* if it has space separated value  */
+      /* p[data-attr~='some'] {
+        background-color: teal;
+      } */
+
+      /* if it is starting with specified value  */
+      /* p[data-attr^='some'] {
+        background-color: teal;
+      } */
+
+      /* if it is ending with specified value  */
+      /* p[data-attr$='some'] {
+        background-color: teal;
+      } */
+
+      /* if it is contains specified value  */
+      p[data-attr*='om'] {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <p>no attr</p>
+    <p data-attr="">empty</p>
+    <p data-attr="some">some</p>
+    <p data-attr="thing">thing</p>
+    <p data-attr="something">something</p>
+    <p data-attr="some-thing">some-thing</p>
+    <p data-attr="some thing">some thing</p>
+    <p data-attr="thing some">thing some</p>
+    <p data-attr="s-o-m-e">s-o-m-e</p>
+    <p data-attr="me">me</p>
+    <p data-attr="so">so</p>
+    <p data-attr="nothing">nothing</p>
+  </body>
+</html>
